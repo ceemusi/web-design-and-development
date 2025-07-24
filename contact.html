@@ -1,0 +1,80 @@
+<!-- This was coded by CM x24103446 -->
+
+<DOCTYPE html>
+    <html>
+        <!-- In the head, I added the charset, and imported Boostrap 3 along with jQuery to help the website be more responsive and help with the columns. -->
+        <head>
+            <!-- The charset and making it responsive for devices -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <!-- Boostrap CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+            <!-- Shared CSS File -->
+            <link rel="stylesheet" href="css/style.css">
+
+            <!-- My JS folder for scripts-->
+            <script src="js/button.js" defer></script>
+            <script src="js/darkmode.js" defer></script>
+
+            <!-- jQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+            <!-- Page Title -->
+            <title>Sustainable Living</title>
+        </head>
+
+        <body>
+            <!-- Creating the navbar -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">AoCC</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Sustainable Living</a></li>
+                        <li class="active"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- The jumbotron/hero section -->
+            <div class="jumbotron text-center">
+                <h1>Contact Us</h1>
+                <p>Reach out to start being more sustainable!</p>
+            </div>
+
+            <!-- Text for the hero section -->
+            <div class="hero-text container-fluid">
+                <h2 class="text-center">Our specialists are ready to help you live more sustainable!</h2>
+            </div>           
+            
+            <!-- The form -->
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="./images/brown_bin.png" class="div1-images">
+                        <h3>Fill out the form below.</h3>
+                        
+                        <script src="js/form.js"></script>
+                        <form name="contactForm" onsubmit="return validateForm()" method="post">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname" placeholder="e.g. John"><br><br>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname" placeholder="e.g. Doe"><br><br>
+                            <label for="lname">Email Address:</label><br>
+                            <input type="text" id="emailAddy" name="emailAddy" placeholder="youremail@example.com"><br><br>
+                            <label for="userMessage">Message:</label><br>
+                            <textarea name="message" rows="5" cols="40" placeholder="Enter your message here.."></textarea><br><br>
+                            <input type="submit" value="Submit">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <footer><p>Action on Climate Change 2025.</p></footer>
+        </body>
+    </html>

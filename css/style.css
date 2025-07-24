@@ -1,0 +1,76 @@
+/* This was coded by CM x24103446 */
+
+/* ----------- DARK MODE CODE ----------*/
+/* Code for the dark mode toggle */
+body.dark-mode {
+    background-color:#1e1e1e;
+    color: #eee;
+}
+
+/* Navbar container background */
+body.dark-mode .navbar-default {
+    background-color: #2d2d30;
+    border-color: #2d2d30;
+}
+
+/* Navbar brand and links */
+body.dark-mode .navbar-default .navbar-brand,
+body.dark-mode .navbar-default .navbar-nav > li > a {
+    background-color: #2d2d30;
+    color: #eee;
+}
+
+/* Active / hovered links */
+body.dark-mode .navbar-default .navbar-nav > .active > a,
+body.dark-mode .navbar-default .navbar-nav > .active > a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Jumbotron background & text */
+body.dark-mode .jumbotron {
+    background-color: #444;
+    color:            #f5f5f5;
+}
+
+/* Any buttons inside the jumbotron */
+body.dark-mode .jumbotron .btn {
+    color: #f5f5f5;
+    background-color: transparent;
+    border-color: #eee;
+}
+/* ----------- DARK MODE CODE ----------*/
+
+/* Get rid of the gap between navabr and jumbotron */
+.navbar-default {
+    margin-bottom: 0;
+}
+
+/* To style the hero text undernesath the jumbotron */
+.hero-text {
+    padding-bottom: 50px;
+}
+
+/* For the images in the grid */
+.div1-images {
+    width: 25%;
+    height: auto;
+}
+
+/* CSS for the hint texts */
+.hints {
+    text-align: center;
+}
+
+/* For the footer */
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    color: black;
+    background-color: #ccc;
+}

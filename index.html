@@ -1,0 +1,98 @@
+<!-- This was coded by CM x24103446 -->
+
+<DOCTYPE html>
+    <html>
+        <!-- In the head, I added the charset, and imported Boostrap 3 along with jQuery to help the website be more responsive and help with the columns. This was not a template, it was coded from scratch. -->
+        <head>
+            <!-- The charset and making it responsive for devices -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <!-- Boostrap CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+            <!-- Shared CSS File -->
+            <link rel="stylesheet" href="css/style.css">
+
+            <!-- My JS folder for scripts-->
+            <script src="js/button.js" defer></script>
+            <script src="js/darkmode.js" defer></script>
+
+            <!-- jQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+            <!-- Page Title -->
+            <title>Sustainable Living</title>
+        </head>
+
+        <body>
+            <!-- Creating the navbar -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">AoCC</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Sustainable Living</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- The jumbotron/hero section -->
+            <div class="jumbotron text-center">
+                <h1>Sustainable Living</h1>
+                <p>How can we make living more sustainable?</p>
+                <button id="toggleTheme" class="btn btn-primary">
+                    💡Switch off the light.
+                </button>
+            </div>
+
+            <!-- Text for the hero section -->
+            <div class="hero-text container-fluid">
+                <h2 class="text-center">Here are 4 ways that you can instantly live more sustainable.</h2> 
+            </div>           
+            
+            <!-- The 4 grid images -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="./images/brown_bin.png" class="div1-images">
+                        <h3>1. Think Before You Shop.</h3>
+                        <p>Every product that we buy leaves an enviromental footprint. From the material we use to create it during manufacturing, tot he packing that ends up in landfill and incinerators.</p>
+                        <p>Only buy what you need, and look for products made from lower-impact materials with minimal packaging and shipping.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="./images/brown_bin.png" class="div1-images">                        
+                        <h3>2. Be water wise.</h3>
+                        <p>Water conservation is critical as our growing population puts increased demand on the nation’s water sources and we face unprecedented droughts.</p>
+                        <p>You can conserve water by taking shorter showers, fixing leaky toilets, and choosing low-flow and low-water appliance options.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="./images/brown_bin.png" class="div1-images">                       
+                        <h3>Drive less, drive green.</h3>        
+                        <p>Fossil-fueled transportation emissions create greenhouse gases, smog, soot and other harmful air pollution.</p>
+                        <p>When you can, walk, bike, carpool or use public transport. This can help drastically reduce your carbon footprint.</p>
+                    </div>
+                        <div class="col-sm-6">
+                        <img src="./images/brown_bin.png" class="div1-images">                           
+                        <h3>Take action.</h3>        
+                        <p>One of the ebst things you can do it take action. You have the power to make change.</p>
+                        <p>Sign and share action alerts, attend events, and talk to your friends about endangered species protection and the need to address human population growth and overconsumption.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Here we will be using DOM manipulation, and the JS will include arrays to generate a random tip for the user.-->
+            <div class="container hints text-center my-4">
+                <button id="getTip toggleTheme" class="btn btn-primary">
+                    Click for a tip!
+                </button>
+
+                <div id="showTip"></div>
+            </div>
+
+            <footer><p>Action on Climate Change 2025.</p></footer>
+        </body>
+    </html>
