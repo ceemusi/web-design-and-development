@@ -14,7 +14,7 @@
             <!-- Shared CSS File -->
             <link rel="stylesheet" href="css/style.css">
 
-            <!-- My JS folder for scripts-->
+            <!-- My JS folder for scripts defer means they won't run unless activated -->
             <script src="js/button.js" defer></script>
             <script src="js/darkmode.js" defer></script>
 
@@ -43,21 +43,23 @@
             <!-- The jumbotron/hero section -->
             <div class="jumbotron text-center">
                 <h1>Contact Us</h1>
-                <p>Reach out to start being more sustainable!</p>
             </div>
 
             <!-- Text for the hero section -->
             <div class="hero-text container-fluid">
-                <h2 class="text-center">Our specialists are ready to help you live more sustainable!</h2>
+                <script src="js/date.js" defer></script>
+                <h2 class="text-center" id="showTime"></h2>
+                <h3 class="text-center">Our specialists are ready to help you live more sustainable.</h3>
             </div>           
             
             <!-- The form -->
             <div class="container text-center">
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="./images/brown_bin.png" class="div1-images">
-                        <h3>Fill out the form below.</h3>
+                        <!-- <img src="./images/brown_bin.png" class="div1-images"> -->
+                        <h3>Fill out the form below.</h3><br>
                         
+                        <!-- Code for the form, uses a script for form validation -->
                         <script src="js/form.js"></script>
                         <form name="contactForm" onsubmit="return validateForm()" method="post">
                             <label for="fname">First name:</label><br>
