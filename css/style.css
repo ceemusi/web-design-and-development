@@ -39,11 +39,40 @@ body.dark-mode .jumbotron .btn {
     background-color: transparent;
     border-color: #eee;
 }
+
 /* ----------- DARK MODE CODE ----------*/
+
+/*--------- Sustainable Living Styling ---------*/
+/* Styling the Navbar */
+.navbar-default {
+    background-color: #90EE90;
+    border-color: #90EE90;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #004400;    /* a dark green that contrasts well */
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #7ed17e;  /* slightly darker on hover */
+  color:            #002200;
+}
 
 /* Get rid of the gap between navabr and jumbotron */
 .navbar-default {
     margin-bottom: 0;
+}
+
+/* For the jumbotron, adding an image */
+.jumbotron.main-jumbo {
+    background-image: url("../images/sustain.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
 }
 
 /* To style the hero text undernesath the jumbotron */
@@ -53,14 +82,34 @@ body.dark-mode .jumbotron .btn {
 
 /* For the images in the grid */
 .div1-images {
-    width: 25%;
+    width: 100%;
+    max-width: 300px;
     height: auto;
+}
+
+/* To resize the 4 grid images*/
+.images-size {
+    width: 300px;
+    height: 200px;
 }
 
 /* CSS for the hint texts */
 .hints {
     text-align: center;
 }
+
+/*--------- Sustainable Living Styling ---------*/
+
+/*--------- Contact Us Styling ---------*/
+
+/* The jumbotron */
+.jumbotron.contact-jumbo {
+    background-image: url("../images/contact.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*--------- Contact Us Styling ---------*/
 
 /* For the footer */
 footer {
@@ -72,5 +121,5 @@ footer {
     height: 50px;
     text-align: center;
     color: black;
-    background-color: #ccc;
+    background-color: #90EE90;
 }
