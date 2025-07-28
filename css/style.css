@@ -40,6 +40,12 @@ body.dark-mode .jumbotron .btn {
     border-color: #eee;
 }
 
+/* For the footer */
+body.dark-mode footer {
+  background-color: #2d2d30; 
+  color:            #eee;    
+}
+
 /* ----------- DARK MODE CODE ----------*/
 
 /*--------- Sustainable Living Styling ---------*/
