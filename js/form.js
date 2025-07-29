@@ -6,5 +6,7 @@ function validateForm() {
   if (userInput == "") {
     alert("Field can not be blank. Please enter the required information.");
     return false;
+  } else {
+    alert("Thank you! We will be in touch soon.");
   }
 } 
