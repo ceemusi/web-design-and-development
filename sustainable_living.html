@@ -17,7 +17,7 @@
             <!-- Shared CSS File -->
             <link rel="stylesheet" href="css/style.css">
 
-            <!-- My JS folder for scripts-->
+            <!-- My JS folder for scripts defer means it won't run unless activated -->
             <script src="js/darkmode.js" defer></script>
 
             <!-- jQuery -->
@@ -46,6 +46,8 @@
             <div class="jumbotron text-center main-jumbo">
                 <h1>Sustainable Living</h1>
                 <p>How can we make living more sustainable?</p>
+
+                <!-- Button for the dark mode feature-->
                 <button id="toggleTheme" class="btn btn-primary">
                     💡Switch off the light.
                 </button>
@@ -56,7 +58,7 @@
                 <h2 class="text-center">Here are 4 ways that you can instantly live more sustainable.</h2> 
             </div>           
             
-            <!-- The 4 grid images -->
+            <!-- The 4 grid images also grid system for smaller devices -->
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
@@ -86,7 +88,7 @@
                 </div>
             </div><br><br>
 
-            <!-- Here we will be using DOM manipulation, and the JS will include arrays to generate a random tip for the user.-->
+            <!-- Here we will be using DOM manipulation, and the JS will include arrays to generate a random tip for the user -->
             <div class="container hints text-center my-4">
                 <script src="js/button.js" defer></script>
                 <button id="getTip" class="btn btn-primary">

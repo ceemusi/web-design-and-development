@@ -63,7 +63,7 @@ body.dark-mode footer {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > li > a:hover {
-  background-color: #7ed17e;  /* slightly darker on hover */
+  background-color: #7ed17e; 
   color:            #002200;
 }
 
